@@ -1,0 +1,105 @@
+/* Google Font css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* Global style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+  line-height: 1.2;
+  color: #ddd;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* Nav style */
+
+#header {
+  background-color: #fff;
+  overflow: hidden;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  height: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 1.5rem;
+}
+
+.brand {
+  width: 90px;
+}
+
+/* Nav form */
+.nav-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type="search"] {
+  width: 50vw;
+  height: 2rem;
+  padding: 1rem;
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-right: none;
+  cursor: text;
+}
+
+input[type="search"]:focus {
+  box-shadow: inset 2px 2px 5px #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: none;
+  display: inline-block;
+  height: 2.2rem;
+  padding: 0 1.5rem;
+  color: grey;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #ddd;
+  color: #333;
+}
+
+.nav-i {
+  background-color: darkgreen;
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
