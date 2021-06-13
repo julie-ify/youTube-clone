@@ -13,7 +13,7 @@ body {
   font-weight: 500;
   font-size: 0.9rem;
   background-color: #f4f4f4;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #333;
 }
 
@@ -25,14 +25,24 @@ img {
 a {
   text-decoration: none;
   color: #333;
+  font-size: 0.9rem;
 }
 
-/* Nav style */
-
-#header {
-  background-color: #fff;
-  overflow: hidden;
+p {
+  font-size: 0.9rem;
+  color: #333;
 }
+
+hr {
+  color: #ddd;
+}
+
+span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* Utility */
 
 .container {
   display: flex;
@@ -45,6 +55,35 @@ a {
   z-index: 2;
 }
 
+.btn {
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.4rem 0.7rem;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: grey;
+  color: #fff;
+}
+
+.btn-light {
+  background-color: #e9ecef;
+  color: #333;
+  border: 1px solid #adb5bd;
+}
+
+/* Nav style */
+
+#header {
+  background-color: #fff;
+  overflow: hidden;
+}
+
 .navbar {
   position: relative;
   display: flex;
@@ -54,6 +93,12 @@ a {
 
 .nav-link {
   margin-left: 1.5rem;
+}
+.nav-i {
+  background-color: darkgreen;
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  color: #fff;
 }
 
 .brand {
@@ -97,13 +142,6 @@ input[type="search"]:focus {
   color: #333;
 }
 
-.nav-i {
-  background-color: darkgreen;
-  border-radius: 50%;
-  padding: 0.5rem 1rem;
-  color: #fff;
-}
-
 /* Content */
 .wrapper {
   display: flex;
@@ -111,10 +149,14 @@ input[type="search"]:focus {
   padding: 2rem 2.5rem;
 }
 
+/* flex left contents */
+
 .flex-left {
   flex: 60%;
   padding: 0 1rem;
 }
+
+/* embeded video */
 
 iframe {
   width: 100%;
@@ -146,47 +188,158 @@ iframe {
 }
 
 .like-item {
-  margin-right: 0.8rem;
+  margin-right: 1.2rem;
   font-size: 1rem;
 }
 
 .border-bottom {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid blue;
   padding-bottom: 0.9rem;
   margin-right: 1rem;
+}
+
+a.thumb-up {
+  color: blue;
 }
 
 .like {
   justify-self: flex-end;
   padding-bottom: 1rem;
 }
+/* Description */
 
-/* Flex right style */
+.description {
+  display: flex;
+  padding: 1rem 0 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description-link {
+  margin-left: 1rem;
+}
+
+.description-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.subscribe-link {
+  color: #fff;
+  background-color: #d00000;
+  padding: 0.7rem 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.showmore {
+  padding: 1rem 0;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.channel-link,
+.comment-1 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.description-item-2 {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.circle {
+  background-color: darkgreen;
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.description-item-2 img {
+  width: 40px;
+}
+
+.description-item-2 input {
+  width: 50vw;
+  background-color: #f4f4f4;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  cursor: text;
+  padding: 0.2rem 0;
+  flex-grow: 1;
+}
+
+.description-item-2 input:focus {
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+}
+
+/* comment wrapper */
+.comment-wrapper {
+  padding: 0.5rem 2rem 1rem 4rem;
+}
+
+.comment-1 {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.comment-1 h4 {
+  margin-right: 2rem;
+}
+
+/* comment section */
+
+.comment-content {
+  display: flex;
+  padding: 0.5rem 0;
+  /* justify-content: center; */
+}
+
+.img-link {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.comment-parag {
+  margin-bottom: 0.5rem;
+}
+
+.like-item-small {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+  color: #888;
+}
+
+.like-item-small:hover {
+  color: #333;
+}
+
+.inline-link {
+  margin-left: 1rem;
+}
+
+.inline-parag {
+  margin: 1rem 0 0;
+}
+
+/* Flex right contents */
 .flex-right {
   flex: 40%;
   padding: 0.5rem 0;
-}
-
-.btn {
-  cursor: pointer;
-  border-radius: 1rem;
-  padding: 0.4rem 0.7rem;
-}
-
-.btn-dark {
-  background-color: #333;
-  color: #fff;
-}
-
-.btn-dark:hover {
-  background-color: grey;
-  color: #fff;
-}
-
-.btn-light {
-  background-color: #e9ecef;
-  color: #333;
-  border: 1px solid #adb5bd;
 }
 
 .grid {
@@ -210,6 +363,11 @@ iframe {
   color: #888;
 }
 
+.lead-3 {
+  color: #888;
+  font-size: 0.8rem;
+}
+
 .lead-3 a {
   color: #888;
   font-size: 0.8rem;
@@ -225,10 +383,10 @@ iframe {
   gap: 0.5rem;
   padding-bottom: 0.3rem;
 }
-
+/* button live */
 .live {
   display: inline-block;
   border: 1px solid red;
   color: red;
-  padding: 0.2rem;
+  padding: 0.1rem;
 }
